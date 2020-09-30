@@ -37,6 +37,20 @@ int main()
         }
         else if  ( election=='2' )
         {
+            int divent(int dividido, int divisor);
+            int peso;
+            cout <<"ingrese el valor de un billete\n: ";
+            cin >> peso ;
+            int monedas[10]={50000,20000,10000,5000,2000,1000,500,200,100,50};
+            int c=0;
+            while( c < 10 )
+            {
+                cout << monedas[c] << " = " <<divent(peso,monedas[c])<<endl;
+                peso=peso%monedas[c++];
+
+            }
+            cout << "sobrante = " << peso <<endl;
+
 
         }
         else if ((election=='x')||(election=='X'))
@@ -48,4 +62,8 @@ int main()
             cout <<"entrada invalida"<< endl;
         }
     }
+}
+int divent(int dividido, int divisor)
+{
+    return (( dividido - (dividido%divisor) )/divisor);
 }
