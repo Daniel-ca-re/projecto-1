@@ -12,6 +12,10 @@ int main()
 
         cout << "chose the exercise you want to run \n X to end the program\n: ";
         cin >> election;
+        if ((election=='x')||(election=='X'))
+        {
+            break;
+        }
         if ( election ==  '1')
         {
             char letra;
@@ -53,10 +57,185 @@ int main()
 
 
         }
-        else if ((election=='x')||(election=='X'))
+        else if (election=='3' )
         {
-            break;
+            int mes;
+            cout <<"ingrese el mes:"<<endl;
+            cin >> mes;
+            if ((0<mes) && (mes<13))
+            {
+                int dia;
+                cout <<"ingrerse dia:"<<endl;
+                cin >> (dia);
+                switch(mes)
+                {
+                    case(1):
+                    {
+                        if(dia<31)
+                        {
+                            cout << dia <<'/'<<mes<<" es una fecha valida"<<endl;
+                            break;
+                        }
+                        else
+                        {
+                            cout <<"fecha invalida"<<endl;
+                            break;
+                        }
+                    }
+                    case(2):
+                    {
+                        if(dia<28)
+                        {
+                            cout << dia <<'/'<<mes<<" es una fecha valida"<<endl;
+                            break;
+                        }
+                        else if(dia==29)
+                        {
+                            cout << dia <<'/'<<mes<<" podria ser una fecha valida"<<endl;
+                            break;
+                        }
+                        else
+                        {
+                            cout <<"fecha invalida"<<endl;
+                            break;
+                        }
+                    }
+                    case(3):
+                    {
+                        if(dia<31)
+                        {
+                            cout << dia <<'/'<<mes<<" es una fecha valida"<<endl;
+                            break;
+                        }
+                        else
+                        {
+                            cout <<"fecha invalida"<<endl;
+                            break;
+                        }
+                        }
+                    case(4):
+                    {
+                        if(dia<30)
+                        {
+                            cout << dia <<'/'<<mes<<" es una fecha valida"<<endl;
+                            break;
+                        }
+                        else
+                        {
+                            cout <<"fecha invalida"<<endl;
+                            break;
+                        }
+                    }
+                    case(5):
+                    {
+                        if(dia<31)
+                        {
+                            cout << dia <<'/'<<mes<<" es una fecha valida"<<endl;
+                            break;
+                        }
+                        else
+                        {
+                            cout <<"fecha invalida"<<endl;
+                            break;
+                        }
+                    }
+                    case(6):
+                    {
+                        if(dia<30)
+                        {
+                            cout << dia <<'/'<<mes<<" es una fecha valida"<<endl;
+                            break;
+                        }
+                        else
+                        {
+                            cout <<"fecha invalida"<<endl;
+                            break;
+                        }
+                    }
+                    case(7):
+                    {
+                        if(dia<31)
+                        {
+                            cout << dia <<'/'<<mes<<" es una fecha valida"<<endl;
+                            break;
+                        }
+                        else
+                        {
+                            cout <<"fecha invalida"<<endl;
+                            break;
+                        }
+                    }
+                    case(8):
+                    {
+                        if(dia<31)
+                        {
+                            cout << dia <<'/'<<mes<<" es una fecha valida"<<endl;
+                            break;
+                        }
+                        else
+                        {
+                            cout <<"fecha invalida"<<endl;
+                            break;
+                        }
+                    }
+                    case(9):
+                    {
+                        if(dia<30)
+                        {
+                            cout << dia <<'/'<<mes<<" es una fecha valida"<<endl;
+                            break;
+                        }
+                        else
+                        {
+                            cout <<"fecha invalida"<<endl;
+                            break;
+                        }
+                    }
+                    case(10):
+                    {
+                        if(dia<31)
+                        {
+                            cout << dia <<'/'<<mes<<" es una fecha valida"<<endl;
+                            break;
+                        }
+                        else
+                        {
+                            cout <<"fecha invalida"<<endl;
+                            break;
+                        }
+                    }
+                    case(11):
+                    {
+                        if(dia<30)
+                        {
+                            cout << dia <<'/'<<mes<<" es una fecha valida"<<endl;
+                            break;
+                        }
+                        else
+                        {
+                            cout <<"fecha invalida"<<endl;
+                            break;
+                        }
+                    }
+                    case(12):
+                    {
+                        if(dia<31)
+                        {
+                            cout << dia <<'/'<<mes<<" es una fecha valida"<<endl;
+                            break;
+                        }
+                        else
+                        {
+                            cout <<"fecha invalida"<<endl;
+                            break;
+                        }
+                    }
+
+
+                }
+            }
         }
+
         else
         {
             cout <<"entrada invalida"<< endl;
